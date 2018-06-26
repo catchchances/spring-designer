@@ -9,8 +9,9 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_kciQIHYDEeinXJhnbjUACw" name="getClassLoader"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_oG7eQHYDEeinXJhnbjUACw" name="DefaultBeanFactory">
+    <generalization xmi:type="uml:Generalization" xmi:id="_VIv78HlDEeiXRpWYv3Bw0w" general="_557aMHlCEeiXRpWYv3Bw0w"/>
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Q1kY0Hd9EeiFRae9f-9gjQ" client="_oG7eQHYDEeinXJhnbjUACw" supplier="_eVXdkHYDEeinXJhnbjUACw" contract="_eVXdkHYDEeinXJhnbjUACw"/>
-    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_YXnAQHklEei5oL-Kc8t9Gw" client="_oG7eQHYDEeinXJhnbjUACw" supplier="_qqntkHYEEeinXJhnbjUACw" contract="_qqntkHYEEeinXJhnbjUACw"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_d6VtYHlDEeiXRpWYv3Bw0w" client="_oG7eQHYDEeinXJhnbjUACw" supplier="_qqntkHYEEeinXJhnbjUACw" contract="_qqntkHYEEeinXJhnbjUACw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_2Q7e0HYDEeinXJhnbjUACw" name="XmlBeanDefinitionReader">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_XnWOoHd9EeiFRae9f-9gjQ" name="loadBeanDefinitions"/>
@@ -36,5 +37,21 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_myrJUHd9EeiFRae9f-9gjQ" name="依赖" client="_ZZAjMHYBEeinXJhnbjUACw" supplier="_qqntkHYEEeinXJhnbjUACw"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_59n7QHd9EeiFRae9f-9gjQ" name="依赖" client="_2Q7e0HYDEeinXJhnbjUACw" supplier="_3_U6UHYDEeinXJhnbjUACw"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_UbMmQHd-EeiFRae9f-9gjQ" name="依赖" client="_qqntkHYEEeinXJhnbjUACw" supplier="_TMga0HdYEeinYL2rC1PX7Q"/>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_YKgi8HkmEei5oL-Kc8t9Gw" name="SingletonBeanR"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YKgi8HkmEei5oL-Kc8t9Gw" name="SingletonBeanRegister"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_557aMHlCEeiXRpWYv3Bw0w" name="DefaultSingletonBeanRegister">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_KwnqgHlDEeiXRpWYv3Bw0w" client="_557aMHlCEeiXRpWYv3Bw0w" supplier="_YKgi8HkmEei5oL-Kc8t9Gw" contract="_YKgi8HkmEei5oL-Kc8t9Gw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_aOYcMHlHEeiXRpWYv3Bw0w" name="ApplicationContext">
+    <generalization xmi:type="uml:Generalization" xmi:id="_iJhGwHlHEeiXRpWYv3Bw0w" general="_eVXdkHYDEeinXJhnbjUACw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_lsyZMHlHEeiXRpWYv3Bw0w" name="依赖" client="_aOYcMHlHEeiXRpWYv3Bw0w" supplier="_oG7eQHYDEeinXJhnbjUACw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_30CnkHlJEeiXRpWYv3Bw0w" name="AbstractApplicationContext" isAbstract="true">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7aWVAHlLEeiXRpWYv3Bw0w" name="getResourceByPath"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_d5oCEHlLEeiXRpWYv3Bw0w" name="FileSystemApplicationContext">
+    <generalization xmi:type="uml:Generalization" xmi:id="_1FFcEHlLEeiXRpWYv3Bw0w" general="_30CnkHlJEeiXRpWYv3Bw0w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eSkGgHlLEeiXRpWYv3Bw0w" name="ClassPathApplicationContext">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4oc1IHlLEeiXRpWYv3Bw0w" general="_30CnkHlJEeiXRpWYv3Bw0w"/>
+  </packagedElement>
 </uml:Model>
