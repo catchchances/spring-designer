@@ -9,9 +9,12 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_kciQIHYDEeinXJhnbjUACw" name="getClassLoader"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_oG7eQHYDEeinXJhnbjUACw" name="DefaultBeanFactory">
-    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_jGP9MHYEEeinXJhnbjUACw" client="_oG7eQHYDEeinXJhnbjUACw" supplier="_eVXdkHYDEeinXJhnbjUACw" contract="_eVXdkHYDEeinXJhnbjUACw"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Q1kY0Hd9EeiFRae9f-9gjQ" client="_oG7eQHYDEeinXJhnbjUACw" supplier="_eVXdkHYDEeinXJhnbjUACw" contract="_eVXdkHYDEeinXJhnbjUACw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_2Q7e0HYDEeinXJhnbjUACw" name="XmlBeanDefinitionReader"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2Q7e0HYDEeinXJhnbjUACw" name="XmlBeanDefinitionReader">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XnWOoHd9EeiFRae9f-9gjQ" name="loadBeanDefinitions"/>
+    <nestedClassifier xmi:type="uml:DataType" xmi:id="_3QiX0HdaEeinYL2rC1PX7Q" name="BeanDefinitionRegister register"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_3_U6UHYDEeinXJhnbjUACw" name="Resource">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_MqxOoHYEEeinXJhnbjUACw" name="getInputStream"/>
   </packagedElement>
@@ -21,7 +24,6 @@
   <packagedElement xmi:type="uml:Class" xmi:id="__k1TIHYDEeinXJhnbjUACw" name="ClassPathXmlResource">
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_JwSagHYEEeinXJhnbjUACw" client="__k1TIHYDEeinXJhnbjUACw" supplier="_3_U6UHYDEeinXJhnbjUACw" contract="_3_U6UHYDEeinXJhnbjUACw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_YehwkHYEEeinXJhnbjUACw" client="_2Q7e0HYDEeinXJhnbjUACw" supplier="_3_U6UHYDEeinXJhnbjUACw"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_qqntkHYEEeinXJhnbjUACw" name="BeanDefinitionResiger">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_v8aXUHYEEeinXJhnbjUACw" name="registerBeanDefinition"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_yMpUkHYEEeinXJhnbjUACw" name="getBeanDefinition"/>
@@ -29,4 +31,11 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_1o8cUHYEEeinXJhnbjUACw" name="DefaultBeanDefinitionRegister">
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_7dRycHYEEeinXJhnbjUACw" client="_1o8cUHYEEeinXJhnbjUACw" supplier="_qqntkHYEEeinXJhnbjUACw" contract="_qqntkHYEEeinXJhnbjUACw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_TMga0HdYEeinYL2rC1PX7Q" name="BeanDefinition"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Nbdz0HdZEeinYL2rC1PX7Q" name="GeneralBeanDenifition">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TcMnMHdZEeinYL2rC1PX7Q" client="_Nbdz0HdZEeinYL2rC1PX7Q" supplier="_TMga0HdYEeinYL2rC1PX7Q" contract="_TMga0HdYEeinYL2rC1PX7Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_myrJUHd9EeiFRae9f-9gjQ" name="依赖" client="_ZZAjMHYBEeinXJhnbjUACw" supplier="_qqntkHYEEeinXJhnbjUACw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_59n7QHd9EeiFRae9f-9gjQ" name="依赖" client="_2Q7e0HYDEeinXJhnbjUACw" supplier="_3_U6UHYDEeinXJhnbjUACw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_UbMmQHd-EeiFRae9f-9gjQ" name="依赖" client="_qqntkHYEEeinXJhnbjUACw" supplier="_TMga0HdYEeinYL2rC1PX7Q"/>
 </uml:Model>
